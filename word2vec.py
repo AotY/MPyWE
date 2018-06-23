@@ -1,5 +1,5 @@
-#!/home/hefang/PROGRAMFILES/anaconda2/bin/python
 # encoding: utf-8
+from __future__ import unicode_literals
 import argparse
 import math
 import struct

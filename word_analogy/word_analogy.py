@@ -177,6 +177,6 @@ if __name__ == "__main__":
     # except Exception as err:
     #     print(err)
 
-    vector_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_pinyin_skip_grim_100d"
+    vector_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_cbow_100d"
     analogy_file = ''
     Analogy(vector_file=vector_file, analogy_file=analogy_file)

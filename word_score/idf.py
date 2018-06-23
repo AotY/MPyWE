@@ -14,7 +14,7 @@ import codecs
 人民日报
 dataset_folder_path = "/Users/LeonTao/NLP/Corpos/People's Daily 2014"
 
-统计每个词的TF - IDF
+统计每个词的 IDF
 '''
 
 dataset_folder_path = "/Users/LeonTao/NLP/Corpos/People's Daily 2014"

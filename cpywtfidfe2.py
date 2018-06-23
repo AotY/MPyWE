@@ -17,6 +17,8 @@ import pickle
 
 u'''
 chinese character and pinyin enhanced word embedding.
+
+tfidf 位置不一样
 '''
 
 MIN_CHINESE = 0x4E00
@@ -26,11 +28,9 @@ character_size = (MAX_CHINESE - MIN_CHINESE + 1)
 
 pinyin_size = 300000
 
+idf_words_dict = pickle.load(open("data/people's_daily_idf_words_dict.pkl", "rb"))
 
-idf_words_dict = pickle.load(open("./data/people's_daily_idf_words_dict.pkl", "rb"))
-
-tf_article_word_counter_dict = pickle.load(open("./data/people's_daily_tf_article_word_counter_dict.pkl", "rb"))
-
+tf_article_word_counter_dict = pickle.load(open("data/people's_daily_tf_article_word_counter_dict.pkl", "rb"))
 
 
 #
@@ -165,7 +165,6 @@ class Vocab:
 
     def index(self, token):
         return self.vocab_hash.get(token)
-
 
     u'''
     构造霍夫曼树：https://www.wikiwand.com/zh-hans/%E9%9C%8D%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81
@@ -341,10 +340,8 @@ def train_process(pid):
             tf_article_word_counter = tf_article_word_counter_dict.get(file_name)
             if tf_article_word_counter is None or len(tf_article_word_counter) == 0:
                 continue
-
             tf_article_word_counter = sorted(tf_article_word_counter.items(), key=lambda x: x[1], reverse=True)
             max_count = tf_article_word_counter[0][1]
-
             for word, count in tf_article_word_counter:
                 print(u'word: {}, count: {}'.format(word, count))
                 tf = count / max_count
@@ -418,7 +415,7 @@ def train_process(pid):
 
                 for c, word_weight in zip(context, norm_words_weight):
                     neu1cpy = np.zeros(dim)
-                    neu1cpy += syn0[c] * word_weight
+                    neu1cpy += syn0[c]
 
                     # 加上 character
                     if len(vocab[c].character) > 0:
@@ -433,7 +430,7 @@ def train_process(pid):
 
                         neu1cpy *= 0.333
 
-                    neu1 += neu1cpy
+                    neu1 += neu1cpy * word_weight  # * word_weight 位置和之前不一样
 
                 assert len(neu1) == dim, u'neu1pinyin and dim do not agree'
 
@@ -482,7 +479,7 @@ def train_process(pid):
                         # hierarchical softmax
                         classifiers = zip(vocab[token].path, vocab[token].code)
 
-                    neu1 = syn0[c] * word_weight
+                    neu1 = syn0[c]
 
                     neu1cpy = np.zeros(dim)
                     neu1cpy += syn0[c]
@@ -498,10 +495,9 @@ def train_process(pid):
 
                         neu1cpy *= 0.333
 
-                    neu1 += neu1cpy
+                    neu1 += neu1cpy * word_weight
 
                     for target, label in classifiers:
-
                         z = np.dot(neu1, syn1[target])
                         p = sigmoid(z)
                         g = alpha * (label - p)
@@ -645,7 +641,7 @@ if __name__ == '__main__':
 
     # /Users/LeonTao/NLP/Corpos/wiki/zhwiki-latest-simplified_tokened.txt
     train_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_cleaned"
-    output_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_character_pinyin_word_tfidf_cbow_100d"
+    output_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_character_pinyin_word_tfidf_2_cbow_100d"
 
     t0 = time.time()
 

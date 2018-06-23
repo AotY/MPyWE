@@ -4,10 +4,8 @@ from __future__ import division
 from collections import Counter
 import os
 from os.path import join, getsize
-from util import parse_line
 import pickle
 import math
-from remove_stop_words import load_stop_words, remove_words
 import codecs
 
 '''

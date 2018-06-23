@@ -103,7 +103,7 @@ if __name__ == "__main__":
     print("Word Similarity Evaluation")
 
     # vector_file = "./Data/zhwiki_substoke.100d.source"
-    vector_file = vector_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_character_cbow_100d"
+    vector_file = vector_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_morpheme_pinyin_word_text_rank_cbow_100d"
     # similarity_file = "./Data/wordsim-297.txt"
     # Similarity(vector_file=vector_file, similarity_file=similarity_file)
     Similarity(vector_file=vector_file, similarity_file="")
@@ -334,7 +334,7 @@ people's_daily_word_tfidf_cbow_100d_2
 | wordsim-240 |  233  |     7     | 0.3359524004878336 |
 +-------------+-------+-----------+--------------------+
 
-acter_word_tfidf_cbow_100d_2, syn0[c] += neu1e 
+chaacter_word_tfidf_cbow_100d_2, syn0[c] += neu1e 
 +-------------+-------+-----------+---------------------+
 | Dataset     | Found | Not Found |     Score (rho)     |
 +-------------+-------+-----------+---------------------+
@@ -460,7 +460,28 @@ people's_daily_character_pinyin_cbow_100d
 
 
 
-people's_daily_pinyin_word_tfidf_skip_grim_100d
+people's_daily_morpheme_pinyin_word_tfidf_cbow_100d
++-------------+-------+-----------+---------------------+
+| Dataset     | Found | Not Found |     Score (rho)     |
++-------------+-------+-----------+---------------------+
+| wordsim-297 |  271  |     26    |  0.5367093675442454 |
+| wordsim-240 |  233  |     7     | 0.41750912569458276 |
++-------------+-------+-----------+---------------------+
 
-people's_daily_character_pinyin_skip_gram_100d
+people's_daily_morpheme_pinyin_word_tfidf_cbow_100d_2
++-------------+-------+-----------+---------------------+
+| Dataset     | Found | Not Found |     Score (rho)     |
++-------------+-------+-----------+---------------------+
+| wordsim-297 |  271  |     26    | 0.36044645990458957 |
+| wordsim-240 |  233  |     7     |  0.4523173255830287 |
++-------------+-------+-----------+---------------------+
+
+people's_daily_morpheme_pinyin_word_text_rank_cbow_100d
++-------------+-------+-----------+----------------------+
+| Dataset     | Found | Not Found |     Score (rho)      |
++-------------+-------+-----------+----------------------+
+| wordsim-297 |  271  |     26    | 0.041390968059511514 |
+| wordsim-240 |  233  |     7     | 0.05805415968100717  |
++-------------+-------+-----------+----------------------+
+
 '''

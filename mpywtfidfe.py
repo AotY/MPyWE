@@ -1,6 +1,6 @@
 # encoding: utf-8
 from __future__ import division
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 import argparse
 import math
 import struct
@@ -16,24 +16,22 @@ from pypinyin import pinyin, Style
 import pickle
 
 u'''
-chinese character and pinyin enhanced word embedding.
+chinese morpheme and pinyin enhanced word embedding.
 '''
 
 MIN_CHINESE = 0x4E00
 MAX_CHINESE = 0x9FA5
 
-character_size = (MAX_CHINESE - MIN_CHINESE + 1)
+morpheme_size = (MAX_CHINESE - MIN_CHINESE + 1)
 
 pinyin_size = 300000
-
 
 idf_words_dict = pickle.load(open("./data/people's_daily_idf_words_dict.pkl", "rb"))
 
 tf_article_word_counter_dict = pickle.load(open("./data/people's_daily_tf_article_word_counter_dict.pkl", "rb"))
 
 
-
-#
+# hash pinyin
 def hash_pinyin(pinyin):
     return abs(hash(pinyin)) % pinyin_size
 
@@ -43,20 +41,20 @@ class VocabItem:
     def __init__(self, word):
         self.word = word
 
-        self.character = []  # character
+        self.morpheme = []  # morpheme
 
         self.pinyin = []
 
         is_all_chinese = True
-        for character in word:
-            character_ord = ord(character)
-            if character_ord < MIN_CHINESE or character_ord > MAX_CHINESE:
+        for morpheme in word:
+            morpheme_ord = ord(morpheme)
+            if morpheme_ord < MIN_CHINESE or morpheme_ord > MAX_CHINESE:
                 is_all_chinese = False
-                self.character = []
+                self.morpheme = []
                 break
 
-            # 加入character的相对位置
-            self.character.append(character_ord - MIN_CHINESE)
+            # 加入morpheme的相对位置
+            self.morpheme.append(morpheme_ord - MIN_CHINESE)
 
         if is_all_chinese:
             pinyins = pinyin(word, heteronym=True, style=Style.TONE2)
@@ -166,7 +164,6 @@ class Vocab:
     def index(self, token):
         return self.vocab_hash.get(token)
 
-
     u'''
     构造霍夫曼树：https://www.wikiwand.com/zh-hans/%E9%9C%8D%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81
     '''
@@ -273,17 +270,17 @@ def sigmoid(z):
 
 
 '''
-初始化Matrix syn0, syn0_c, syn1
+初始化Matrix syn0, syn0_m, syn1
 '''
 
 
-def init_net(dim, vocab_size, character_size, pinyin_size):  # dim=635, vocab_size=100
+def init_net(dim, vocab_size, morpheme_size, pinyin_size):  # dim=635, vocab_size=100
 
     # Init syn0 with random numbers from a uniform distribution on the interval [-0.5, 0.5]/dim
     #  用区间[-0.5,0.5] / dim的均匀分布的随机数初始化syn0
     tmp = np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(vocab_size, dim))
 
-    syn0_c = np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(character_size, dim))
+    syn0_m = np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(morpheme_size, dim))
 
     syn0_pinyin = np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(pinyin_size, dim))
     # syn0_pinyin = np.random.normal(scale=0.1, size=(pinyin_size, dim))
@@ -292,8 +289,8 @@ def init_net(dim, vocab_size, character_size, pinyin_size):  # dim=635, vocab_si
     syn0 = np.ctypeslib.as_ctypes(tmp)
     syn0 = Array(syn0._type_, syn0, lock=False)
 
-    syn0_c = np.ctypeslib.as_ctypes(syn0_c)
-    syn0_c = Array(syn0_c._type_, syn0_c, lock=False)
+    syn0_m = np.ctypeslib.as_ctypes(syn0_m)
+    syn0_m = Array(syn0_m._type_, syn0_m, lock=False)
 
     syn0_pinyin = np.ctypeslib.as_ctypes(syn0_pinyin)
     syn0_pinyin = Array(syn0_pinyin._type_, syn0_pinyin, lock=False)
@@ -303,7 +300,7 @@ def init_net(dim, vocab_size, character_size, pinyin_size):  # dim=635, vocab_si
     syn1 = np.ctypeslib.as_ctypes(tmp)
     syn1 = Array(syn1._type_, syn1, lock=False)
 
-    return (syn0, syn0_c, syn0_pinyin, syn1)
+    return (syn0, syn0_m, syn0_pinyin, syn1)
 
 
 '''
@@ -324,7 +321,7 @@ def train_process(pid):
     last_word_count = 0
 
     article_words_tf_idf = None
-
+    non_tf_idf = None
     while fi.tell() < end:  #
         line = fi.readline().strip()
 
@@ -338,23 +335,31 @@ def train_process(pid):
 
             # word
             article_words_tf_idf = {}
+
             tf_article_word_counter = tf_article_word_counter_dict.get(file_name)
             if tf_article_word_counter is None or len(tf_article_word_counter) == 0:
                 continue
 
-            tf_article_word_counter = sorted(tf_article_word_counter.items(), key=lambda x: x[1], reverse=True)
-            max_count = tf_article_word_counter[0][1]
+            # tf_article_word_counter = sorted(tf_article_word_counter.items(), key=lambda x: x[1], reverse=True)
+            # max_count = tf_article_word_counter[0][1]
+            max_count = np.max(tf_article_word_counter.values())
+            print ('max_count: ', max_count)
 
-            for word, count in tf_article_word_counter:
+            # max_idf = np.max(idf_words_dict.values())
+            # min_idf = np.min(idf_words_dict.values())
+            # non_idf = min((min_idf / max_idf) - min_idf, min_idf)
+            # non_tf_idf = non_idf * (1 / max_count)
+
+            for word, count in tf_article_word_counter.items():
                 print(u'word: {}, count: {}'.format(word, count))
-                tf = count / max_count
+                tf = (count + 1) / max_count
                 idf = idf_words_dict.get(word)
 
                 if idf is None:
                     print(u'word: {} idf is None'.format(word))
                     idf = 0.0
+                    # idf = non_idf
                 tf_idf = tf * idf
-
                 # 这里要把word变为索引
                 word_index = vocab.index(word)
                 if word_index is None:
@@ -396,6 +401,7 @@ def train_process(pid):
                 word_tf_idf = article_words_tf_idf.get(c)
                 if word_tf_idf is None:
                     word_tf_idf = 0
+                    # word_tf_idf = non_tf_idf
                 words_weight.append(word_tf_idf)
 
             print('words_weight: ', words_weight)
@@ -406,34 +412,33 @@ def train_process(pid):
             else:
                 norm_words_weight = words_weight / np.sum(words_weight)
 
-            # 中 CBOW, skip-gram 模型中加入pinyin信息
             # CBOW
             if cbow:
 
                 neu1 = np.zeros(dim)
                 neu1e = np.zeros(dim)
 
-                character_index_list = []
+                morpheme_index_list = []
                 pinyin_index_list = []
 
                 for c, word_weight in zip(context, norm_words_weight):
-                    neu1cpy = np.zeros(dim)
-                    neu1cpy += syn0[c] * word_weight
+                    neu1mpy = np.zeros(dim)
+                    neu1mpy += syn0[c] * word_weight
 
-                    # 加上 character
-                    if len(vocab[c].character) > 0:
-                        for character_index in vocab[c].character:
-                            neu1cpy += syn0_c[character_index] * 1.0 / len(vocab[c].character)
-                            character_index_list.append(character_index)
+                    # 加上 morpheme
+                    if len(vocab[c].morpheme) > 0:
+                        for morpheme_index in vocab[c].morpheme:
+                            neu1mpy += syn0_m[morpheme_index] * 1.0 / len(vocab[c].morpheme)
+                            morpheme_index_list.append(morpheme_index)
 
                         # 加上 pinyin
                         for pinyin_index in vocab[c].pinyin:
-                            neu1cpy += syn0_pinyin[pinyin_index] * 1.0 / len(vocab[c].pinyin)
+                            neu1mpy += syn0_pinyin[pinyin_index] * 1.0 / len(vocab[c].pinyin)
                             pinyin_index_list.append(pinyin_index)
 
-                        neu1cpy *= 0.333
+                        neu1mpy *= 0.333
 
-                    neu1 += neu1cpy
+                    neu1 += neu1mpy
 
                 assert len(neu1) == dim, u'neu1pinyin and dim do not agree'
 
@@ -460,9 +465,9 @@ def train_process(pid):
                 for c in context:
                     syn0[c] += neu1e
 
-                # character_rate: the factor <float> of learning rate for pinyin, default is 1.0
-                for character_index in character_index_list:
-                    syn0_c[character_index] += neu1e * character_rate
+                # morpheme_rate: the factor <float> of learning rate for pinyin, default is 1.0
+                for morpheme_index in morpheme_index_list:
+                    syn0_m[morpheme_index] += neu1e * morpheme_rate
 
                 for pinyin_index in pinyin_index_list:
                     syn0_pinyin[pinyin_index] += neu1e * pinyin_rate
@@ -484,24 +489,23 @@ def train_process(pid):
 
                     neu1 = syn0[c] * word_weight
 
-                    neu1cpy = np.zeros(dim)
-                    neu1cpy += syn0[c]
+                    neu1mpy = np.zeros(dim)
+                    neu1mpy += syn0[c]
 
-                    # 加上 character
-                    if len(vocab[c].character) > 0:
-                        for character_index in vocab[c].character:
-                            neu1cpy += syn0_c[character_index] * 1.0 / len(vocab[c].character)
+                    # 加上 morpheme
+                    if len(vocab[c].morpheme) > 0:
+                        for morpheme_index in vocab[c].morpheme:
+                            neu1mpy += syn0_m[morpheme_index] * 1.0 / len(vocab[c].morpheme)
 
                         # 加上 pinyin
                         for pinyin_index in vocab[c].pinyin:
-                            neu1cpy += syn0_pinyin[pinyin_index] * 1.0 / len(vocab[c].pinyin)
+                            neu1mpy += syn0_pinyin[pinyin_index] * 1.0 / len(vocab[c].pinyin)
 
-                        neu1cpy *= 0.333
+                        neu1mpy *= 0.333
 
-                    neu1 += neu1cpy
+                    neu1 += neu1mpy
 
                     for target, label in classifiers:
-
                         z = np.dot(neu1, syn1[target])
                         p = sigmoid(z)
                         g = alpha * (label - p)
@@ -512,10 +516,10 @@ def train_process(pid):
                     # Update syn0
                     syn0[c] += neu1e
 
-                    # Update syn0_c syn0_pinyin
-                    if len(vocab[c].character) > 0:
-                        for character_index in vocab[c].character:
-                            syn0_c[character_index] += neu1e * character_rate
+                    # Update syn0_m syn0_pinyin
+                    if len(vocab[c].morpheme) > 0:
+                        for morpheme_index in vocab[c].morpheme:
+                            syn0_m[morpheme_index] += neu1e * morpheme_rate
 
                     if len(vocab[c].pinyin) > 0:
                         for pinyin_index in vocab[c].pinyin:
@@ -537,7 +541,7 @@ u'''
 '''
 
 
-def save(vocab, syn0, syn0_c, syn0_pinyin, fo, binary):
+def save(vocab, syn0, syn0_m, syn0_pinyin, fo, binary):
     print(u'Saving model to', fo)
     dim = len(syn0[0])
     if binary:
@@ -545,8 +549,8 @@ def save(vocab, syn0, syn0_c, syn0_pinyin, fo, binary):
         fo.write('%d %d\n' % (len(syn0), dim))
         fo.write('\n')
         for token, vector in zip(vocab, syn0):
-            for character_index in token.charater:
-                vector = np.add(vector, np.multiply(syn0_c[character_index, :], 1.0 / len(token.charater)))
+            for morpheme_index in token.charater:
+                vector = np.add(vector, np.multiply(syn0_m[morpheme_index, :], 1.0 / len(token.charater)))
 
             fo.write('%s ' % token.word)
             for s in vector:
@@ -561,8 +565,8 @@ def save(vocab, syn0, syn0_c, syn0_pinyin, fo, binary):
             tmp_vector = np.zeros(dim)
             tmp_vector = np.add(tmp_vector, vector)
 
-            for character_index in token.character:
-                tmp_vector += np.multiply(syn0_c[character_index], 1.0 / len(token.character))
+            for morpheme_index in token.morpheme:
+                tmp_vector += np.multiply(syn0_m[morpheme_index], 1.0 / len(token.morpheme))
 
             for pinyin_index in token.pinyin:
                 tmp_vector += np.multiply(syn0_pinyin[pinyin_index], 1.0 / len(token.pinyin))
@@ -579,12 +583,12 @@ def save(vocab, syn0, syn0_c, syn0_pinyin, fo, binary):
 
 
 def __init_process(*args):
-    global vocab, syn0, syn0_c, syn0_pinyin, syn1, table, cbow, neg, dim, starting_alpha
-    global win, num_processes, character_rate, pinyin_rate, global_word_count, fi
+    global vocab, syn0, syn0_m, syn0_pinyin, syn1, table, cbow, neg, dim, starting_alpha
+    global win, num_processes, morpheme_rate, pinyin_rate, global_word_count, fi
 
     # initargs = (vocab, syn0, syn1, table, cbow, neg, dim, alpha, win, num_processes, global_word_count, fi)
-    vocab, syn0_tmp, syn0_c_tmp, syn0_pinyin_tmp, syn1_tmp, table, cbow, neg, dim, \
-    starting_alpha, win, num_processes, character_rate, pinyin_rate, global_word_count = args[:-1]
+    vocab, syn0_tmp, syn0_m_tmp, syn0_pinyin_tmp, syn1_tmp, table, cbow, neg, dim, \
+    starting_alpha, win, num_processes, morpheme_rate, pinyin_rate, global_word_count = args[:-1]
 
     fi = codecs.open(args[-1], 'r', encoding='utf-8')
 
@@ -592,7 +596,7 @@ def __init_process(*args):
         warnings.simplefilter('ignore', RuntimeWarning)
         syn0 = np.ctypeslib.as_array(syn0_tmp)
         syn1 = np.ctypeslib.as_array(syn1_tmp)
-        syn0_c = np.ctypeslib.as_array(syn0_c_tmp)
+        syn0_m = np.ctypeslib.as_array(syn0_m_tmp)
         syn0_pinyin = np.ctypeslib.as_array(syn0_pinyin_tmp)
 
 
@@ -601,12 +605,12 @@ def __init_process(*args):
 '''
 
 
-def train(fi, fo, cbow, neg, dim, alpha, win, min_count, num_processes, binary, character_rate, pinyin_rate):
+def train(fi, fo, cbow, neg, dim, alpha, win, min_count, num_processes, binary, morpheme_rate, pinyin_rate):
     # Read train file to init vocab (词汇表）
     vocab = Vocab(fi, min_count)
 
-    # Init net
-    syn0, syn0_c, syn0_pinyin, syn1 = init_net(dim, len(vocab), (MAX_CHINESE - MIN_CHINESE + 1), pinyin_size)
+    # Init net，(MAX_CHINESE - MIN_CHINESE + 1)要换为morpheme_size
+    syn0, syn0_m, syn0_pinyin, syn1 = init_net(dim, len(vocab), (MAX_CHINESE - MIN_CHINESE + 1), pinyin_size)
 
     global_word_count = Value('i', 0)
 
@@ -624,8 +628,8 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, num_processes, binary, 
     t0 = time.time()
 
     pool = Pool(processes=num_processes, initializer=__init_process,
-                initargs=(vocab, syn0, syn0_c, syn0_pinyin, syn1, table, cbow, neg, dim, alpha,
-                          win, num_processes, character_rate, pinyin_rate, global_word_count, fi))
+                initargs=(vocab, syn0, syn0_m, syn0_pinyin, syn1, table, cbow, neg, dim, alpha,
+                          win, num_processes, morpheme_rate, pinyin_rate, global_word_count, fi))
 
     # Apply `func` to each element in `iterable`, collecting the results in a list that is returned.
     pool.map(train_process, range(num_processes))
@@ -635,7 +639,7 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, num_processes, binary, 
     print(u'Completed training. Training took', (t1 - t0) / 60, u'minutes')
 
     # Save model to file
-    save(vocab, syn0, syn0_c, syn0_pinyin, fo, binary)
+    save(vocab, syn0, syn0_m, syn0_pinyin, fo, binary)
 
 
 if __name__ == '__main__':
@@ -645,7 +649,7 @@ if __name__ == '__main__':
 
     # /Users/LeonTao/NLP/Corpos/wiki/zhwiki-latest-simplified_tokened.txt
     train_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_cleaned"
-    output_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_character_pinyin_word_tfidf_cbow_100d"
+    output_file = "/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_morpheme_pinyin_word_tfidf_cbow_100d"
 
     t0 = time.time()
 
@@ -668,8 +672,8 @@ if __name__ == '__main__':
     parser.add_argument('-processes', help='Number of processes', dest='num_processes', default=1, type=int)
     parser.add_argument('-binary', help='1 for output model in binary format, 0 otherwise', dest='binary', default=0,
                         type=int)
-    parser.add_argument('-character-rate', help='the factor <float> of learning rate for character, default is 1.0',
-                        dest='character_rate', default=1.0, type=float)
+    parser.add_argument('-morpheme-rate', help='the factor <float> of learning rate for morpheme, default is 1.0',
+                        dest='morpheme_rate', default=1.0, type=float)
 
     parser.add_argument('-pinyin-rate', help='the factor <float> of learning rate for pinyin, default is 1.0',
                         dest='pinyin_rate', default=1.0, type=float)
@@ -681,7 +685,7 @@ if __name__ == '__main__':
     print(u'args: {} \n'.format(args))
 
     train(args.fi, args.fo, bool(args.cbow), args.neg, args.dim, args.alpha, args.win,
-          args.min_count, args.num_processes, bool(args.binary), args.character_rate, args.pinyin_rate)
+          args.min_count, args.num_processes, bool(args.binary), args.morpheme_rate, args.pinyin_rate)
 
     t1 = time.time()
     print(u"cost time: {}".format(t1 - t0))
