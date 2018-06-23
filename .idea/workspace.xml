@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="879c2736-e9bf-442c-8889-c139bb70aad8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CA8/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CA8/ana_eval_dense.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CA8/ana_eval_sparse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CA8/data/morphological.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CA8/data/semantic.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpywe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cpywtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ctfidfwe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ctfidfwtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cwe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cwtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/all_disyllable_morpheme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/all_monosyllable_morpheme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/all_multisyllable_morpheme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/cpywtfidfe2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradient_check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mpywe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mtfidfwe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mwe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mwtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/Reame.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/remove_filename.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/remove_stop_words.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/seg_by_morpheme.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/stats.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/stats_character.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/stats_word.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/to_one_file.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/people's_daily/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytfidfwe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pytfidfwtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pywe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pywtfidfe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/Data/analogy.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/analogical_reasoning.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/find_wordAnalogy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/most_analogy_word.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_analogy/word_analogy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/Data/wordsim-240.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/Data/wordsim-297.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/find_wordSimilarity.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/load_output_vector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/most_similarity_word.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/relatedness_computation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word_similarity/word_similarity.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wtfidfe.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec.py" afterPath="$PROJECT_DIR$/word2vec.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/word2vecpy$cwe.coverage" NAME="cwe Coverage Results" MODIFIED="1529236348682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$remove_filename.coverage" NAME="remove_filename Coverage Results" MODIFIED="1529511094101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$relatedness_computation.coverage" NAME="relatedness_computation Coverage Results" MODIFIED="1528252191272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sim" />
+    <SUITE FILE_PATH="coverage/word2vecpy$analogical_reasoning.coverage" NAME="analogical_reasoning Coverage Results" MODIFIED="1528252375633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sim" />
+    <SUITE FILE_PATH="coverage/word2vecpy$word2vec.coverage" NAME="word2vec Coverage Results" MODIFIED="1529214714915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$ctfidfwtfidfe.coverage" NAME="ctfidfwtfidfe Coverage Results" MODIFIED="1529212075622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$cpywe.coverage" NAME="cpywe Coverage Results" MODIFIED="1529647027765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$most_analogy_word.coverage" NAME="most_analogy_word Coverage Results" MODIFIED="1529400033455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word_analogy" />
+    <SUITE FILE_PATH="coverage/word2vecpy$mwe.coverage" NAME="mwe Coverage Results" MODIFIED="1529470240186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$wtfidfe.coverage" NAME="wtfidfe Coverage Results" MODIFIED="1529469681187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$stats.coverage" NAME="stats Coverage Results" MODIFIED="1529029491230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$keyedvectors.coverage" NAME="keyedvectors Coverage Results" MODIFIED="1528251695806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda2/lib/python2.7/site-packages/gensim/models" />
+    <SUITE FILE_PATH="coverage/word2vecpy$stats_word.coverage" NAME="stats_word Coverage Results" MODIFIED="1529239037020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$pywtfidfe.coverage" NAME="pywtfidfe Coverage Results" MODIFIED="1483229493093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$pywe.coverage" NAME="pywe Coverage Results" MODIFIED="1483229296584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$word_analogy.coverage" NAME="word_analogy Coverage Results" MODIFIED="1529598680751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word_analogy" />
+    <SUITE FILE_PATH="coverage/word2vecpy$remove_stop_words.coverage" NAME="remove_stop_words Coverage Results" MODIFIED="1529027267965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$stats_character.coverage" NAME="stats_character Coverage Results" MODIFIED="1529213415654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$to_one_file.coverage" NAME="to_one_file Coverage Results" MODIFIED="1529026026430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$cpywtfidfe.coverage" NAME="cpywtfidfe Coverage Results" MODIFIED="1529653106368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$cpywtfidfe2.coverage" NAME="cpywtfidfe2 Coverage Results" MODIFIED="1529761752593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dict" />
+    <SUITE FILE_PATH="coverage/word2vecpy$seg_by_morpheme.coverage" NAME="seg_by_morpheme Coverage Results" MODIFIED="1529320082384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/people's_daily" />
+    <SUITE FILE_PATH="coverage/word2vecpy$ctfidfwe.coverage" NAME="ctfidfwe Coverage Results" MODIFIED="1529462633686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$mpywe.coverage" NAME="mpywe Coverage Results" MODIFIED="1529487488322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$word_similarity.coverage" NAME="word_similarity Coverage Results" MODIFIED="1529737545226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word_similarity" />
+    <SUITE FILE_PATH="coverage/word2vecpy$ana_eval_dense.coverage" NAME="ana_eval_dense Coverage Results" MODIFIED="1529479857705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CA8" />
+    <SUITE FILE_PATH="coverage/word2vecpy$gradient_check.coverage" NAME="gradient_check Coverage Results" MODIFIED="1528785959866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$mpwe.coverage" NAME="mpwe Coverage Results" MODIFIED="1528856564806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/word2vecpy$most_similarity_word.coverage" NAME="most_similarity_word Coverage Results" MODIFIED="1529395940690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word_similarity" />
+    <SUITE FILE_PATH="coverage/word2vecpy$load_output_vector.coverage" NAME="load_output_vector Coverage Results" MODIFIED="1528250925930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sim" />
+    <SUITE FILE_PATH="coverage/word2vecpy$cwtfidfe.coverage" NAME="cwtfidfe Coverage Results" MODIFIED="1529463316299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="word2vecpy" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="cpywtfidfe.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpywtfidfe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="685" selection-end-column="0" />
+              <folding>
+                <element signature="e#67#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cpywtfidfe2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dict/cpywtfidfe2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="e#67#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>people's_daily_word_tfidf_cbow_100d</find>
+      <find>character_size</find>
+      <find>neu1</find>
+      <find>character_weight_dict</find>
+      <find>index</find>
+      <find>from __future__ import division</find>
+      <find>恐怖</find>
+      <find>人</find>
+      <find>民</find>
+      <find>pinyin_size</find>
+      <find>Alpha:</find>
+      <find>syn0_m</find>
+      <find>train_process(pid):</find>
+      <find>people's_daily_morpheme_cbow_100d</find>
+      <find>train</find>
+      <find>remove_words</find>
+      <find>people's_daily_pinyin_word_tfidf_cbow_100d</find>
+      <find>save_file_f</find>
+      <find>morpheme_index_list</find>
+      <find>Saving model to</find>
+      <find>init_net</find>
+      <find>syn0_pinyin</find>
+      <find>article_words_tf_idf</find>
+      <find>output_file</find>
+      <find>pinyin_hash_list</find>
+      <find>Reading word</find>
+      <find>cost time</find>
+      <find>index(</find>
+      <find>people's_daily_character_pinyin_cbow_100d</find>
+      <find>people's_daily_character_cbow_100d</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>morpheme_count</replace>
+      <replace>global_morpheme_count</replace>
+      <replace>, 'r'</replace>
+      <replace>character-rate</replace>
+      <replace>character_size</replace>
+      <replace>`</replace>
+      <replace>neu1m</replace>
+      <replace>self.morpheme</replace>
+      <replace>syn0_c</replace>
+      <replace>neu1cpy</replace>
+      <replace>morpheme</replace>
+      <replace>morpheme_rate</replace>
+      <replace>syn0_m_tmp</replace>
+      <replace>morpheme_index</replace>
+      <replace>neu1mpy</replace>
+      <replace>total_character_counter</replace>
+      <replace>character</replace>
+      <replace>character_index</replace>
+      <replace>character_rate</replace>
+      <replace>word</replace>
+      <replace>tf_article_character_counter</replace>
+      <replace>neu1c</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/people's_daily/Reame.md" />
+        <option value="$PROJECT_DIR$/sim/load_output_vector.py" />
+        <option value="$PROJECT_DIR$/sim/relatedness_computation.py" />
+        <option value="$PROJECT_DIR$/sim/analogical_reasoning.py" />
+        <option value="$PROJECT_DIR$/word_analogy/find_wordAnalogy.py" />
+        <option value="$PROJECT_DIR$/word_analogy/analogical_reasoning.py" />
+        <option value="$PROJECT_DIR$/mpwe.py" />
+        <option value="$PROJECT_DIR$/gradient_check.py" />
+        <option value="$PROJECT_DIR$/data/input" />
+        <option value="$PROJECT_DIR$/people's_daily/util..py" />
+        <option value="$PROJECT_DIR$/people's_daily/util.py" />
+        <option value="$PROJECT_DIR$/data/stop_words.txt" />
+        <option value="$PROJECT_DIR$/people's_daily/to_one_file.py" />
+        <option value="$PROJECT_DIR$/people's_daily/stats.py" />
+        <option value="$PROJECT_DIR$/data/input-chinese" />
+        <option value="$PROJECT_DIR$/word2vec.py" />
+        <option value="$PROJECT_DIR$/cwe.py" />
+        <option value="$PROJECT_DIR$/people's_daily/stats_character.py" />
+        <option value="$PROJECT_DIR$/people's_daily/stats_word.py" />
+        <option value="$PROJECT_DIR$/dict/all_disyllable_morpheme.txt" />
+        <option value="$PROJECT_DIR$/people's_daily/seg_by_morpheme.py" />
+        <option value="$PROJECT_DIR$/mwtfidfe.py" />
+        <option value="$PROJECT_DIR$/word_similarity/similarity_word.py" />
+        <option value="$PROJECT_DIR$/word_similarity/relatedness_computation.py" />
+        <option value="$PROJECT_DIR$/word_similarity/find_wordSimilarity.py" />
+        <option value="$PROJECT_DIR$/word_similarity/most_similarity_word.py" />
+        <option value="$PROJECT_DIR$/word_analogy/most_analogy_word.py" />
+        <option value="$PROJECT_DIR$/ctfidfwe.py" />
+        <option value="$PROJECT_DIR$/ctfidfwtfidfe.py" />
+        <option value="$PROJECT_DIR$/wtfidfe.py" />
+        <option value="$PROJECT_DIR$/CA8/ana_eval_sparse.py" />
+        <option value="$PROJECT_DIR$/CA8/ana_eval_dense.py" />
+        <option value="$PROJECT_DIR$/dict/all_multisyllable_morpheme.txt" />
+        <option value="$PROJECT_DIR$/people's_daily/remove_stop_words.py" />
+        <option value="$PROJECT_DIR$/people's_daily/remove_filename.py" />
+        <option value="$PROJECT_DIR$/cwtfidfe.py" />
+        <option value="$PROJECT_DIR$/mpywe.py" />
+        <option value="$PROJECT_DIR$/mtfidfwe.py" />
+        <option value="$PROJECT_DIR$/mwe.py" />
+        <option value="$PROJECT_DIR$/pytfidfwe.py" />
+        <option value="$PROJECT_DIR$/pytfidfwtfidfe.py" />
+        <option value="$PROJECT_DIR$/word_analogy/word_analogy.py" />
+        <option value="$PROJECT_DIR$/pywtfidfe.py" />
+        <option value="$PROJECT_DIR$/pywe.py" />
+        <option value="$PROJECT_DIR$/cpywe.py" />
+        <option value="$PROJECT_DIR$/cpywtfidfe.py" />
+        <option value="$PROJECT_DIR$/word_similarity/word_similarity.py" />
+        <option value="$PROJECT_DIR$/dict/cpywtfidfe2.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="word2vecpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word2vecpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word2vecpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word2vecpy" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word2vecpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word2vecpy" type="462c0819:PsiDirectoryNode" />
+              <item name="people's_daily" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="word2vecpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="word2vecpy" type="462c0819:PsiDirectoryNode" />
+              <item name="word_similarity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="word2vecpy" type="cbb8eebc:String" user="word2vecpy" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="word2vecpy" type="cbb8eebc:String" user="word2vecpy" />
+              <item name="dict" type="cbb8eebc:String" user="dict" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/data/output&#10;/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/input&#10;/Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/data/people's_daily_cleaned" />
+    <property name="SearchEverywhereHistoryKey" value="si&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/word_similarity/word_similarity.py&#10;simi&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/word_similarity/word_similarity.py&#10;sim&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/word_similarity/word_similarity.py&#10;pywe.&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/pywe.py&#10;cpyw&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/cpywe.py&#10;stats&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/people's_daily/stats_word.py&#10;tf&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/ctfidfwtfidfe.py&#10;sta&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/people's_daily/stats_word.py&#10;cwe&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/cwe.py&#10;s&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/people's_daily/stats.py&#10;word&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/word2vec.py&#10;cw&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/cwe.py&#10;py&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/pywe.py&#10;m&#9;FILE&#9;file:///Users/LeonTao/PycharmProjects/deborausujono/word2vecpy/mwe.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/people's_daily" />
+      <recent name="$PROJECT_DIR$/CA8/data" />
+      <recent name="$PROJECT_DIR$/CA8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/word_analogy" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.cpywtfidfe2">
+    <configuration name="cpywe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="word2vecpy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cpywe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="cpywtfidfe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="word2vecpy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cpywtfidfe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="cpywtfidfe2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dict" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="word2vecpy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dict/cpywtfidfe2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="pywtfidfe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="word2vecpy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pywtfidfe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="word_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word_similarity" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="word2vecpy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word_similarity/word_similarity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.word_similarity" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pywtfidfe" />
+      <item index="2" class="java.lang.String" itemvalue="Python.cpywe" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cpywtfidfe" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cpywtfidfe2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.cpywtfidfe2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.word_similarity" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cpywtfidfe" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cpywe" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pywtfidfe" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="879c2736-e9bf-442c-8889-c139bb70aad8" name="Default" comment="" />
+      <created>1519902582605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519902582605</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44084683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44103774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>255</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>272</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>477</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/to_one_file.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word_similarity/relatedness_computation.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word_similarity/word_similarity.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word_similarity/word_similarity.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word2vec.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word_similarity/word_similarity.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cwe.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cwe.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pywe.py</url>
+          <line>470</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mwe.py</url>
+          <line>667</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mwe.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cpywe.py</url>
+          <line>550</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cpywe.py</url>
+          <line>326</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pywe.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/stats.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/stats_character.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>523</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/stats_word.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/stats_word.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/people's_daily/stats_character.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>648</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>593</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwtfidfe.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwtfidfe.py</url>
+          <line>315</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>315</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwe.py</url>
+          <line>338</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ctfidfwtfidfe.py</url>
+          <line>365</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/word_similarity/most_similarity_word.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mpywe.py</url>
+          <line>727</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mpywe.py</url>
+          <line>182</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mpywe.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="139" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="vocab_items" />
+        <watch expression="neu1" />
+        <watch expression="syn0._objects" />
+        <watch expression="syn0_pinyin" />
+        <watch expression="vocab_items[7]" />
+        <watch expression="tf_article_character_counter" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/gensim/models/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="953" column="0" lean-forward="false" selection-start-line="953" selection-start-column="0" selection-end-line="953" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/gensim/models/keyedvectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_similarity/Data/wordsim-297.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="109" column="2" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_similarity/Data/wordsim-240.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_similarity/most_similarity_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="62" lean-forward="false" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+          <folding>
+            <element signature="e#18#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.2/python_stubs/-389728921/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="4915" column="53" lean-forward="false" selection-start-line="4915" selection-start-column="46" selection-end-line="4915" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy/Data/analogy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="296" column="11" lean-forward="true" selection-start-line="296" selection-start-column="11" selection-end-line="296" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/all_monosyllable_morpheme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="4535" column="1" lean-forward="false" selection-start-line="4535" selection-start-column="0" selection-end-line="4535" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/all_disyllable_morpheme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="102" column="2" lean-forward="true" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CA8/data/morphological.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CA8/data/semantic.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CA8/ana_eval_sparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CA8/ana_eval_dense.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="914" column="67" lean-forward="true" selection-start-line="914" selection-start-column="67" selection-end-line="914" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_similarity/relatedness_computation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people's_daily/to_one_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/input-chinese">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_idf_characters_dict.pkl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people's_daily/remove_stop_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_cleaned_without_filename">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_cleaned">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people's_daily/remove_filename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_pinyin_cbow_100d">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_cbow_100d">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mpywe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="e#67#98#0" expanded="false" />
+            <marker date="1529544957000" expanded="false" signature="16503:18481" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mwe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#67#98#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529214712000" expanded="true" signature="2140:2194" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/all_multisyllable_morpheme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="129" column="3" lean-forward="false" selection-start-line="129" selection-start-column="3" selection-end-line="129" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy/analogical_reasoning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy/find_wordAnalogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy/most_analogy_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_analogy/word_analogy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3806">
+          <caret line="179" column="116" lean-forward="false" selection-start-line="179" selection-start-column="116" selection-end-line="179" selection-end-column="116" />
+          <folding>
+            <element signature="e#224#233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pywtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11005">
+          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+            <marker date="1483229489000" expanded="true" signature="14784:16446" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pywe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="480" column="29" lean-forward="true" selection-start-line="479" selection-start-column="29" selection-end-line="480" selection-end-column="29" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+            <marker date="1529635125000" expanded="true" signature="11118:12841" ph="..." />
+            <marker date="1529635125000" expanded="true" signature="12879:14423" ph="..." />
+            <marker date="1529635125000" expanded="true" signature="14424:14425" ph="..." />
+            <marker date="1529635125000" expanded="true" signature="14930:15468" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+            <marker date="1529236320000" expanded="false" signature="12224:13941" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpywe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="444" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="629" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctfidfwtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529463017000" expanded="false" signature="16374:18614" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="442" column="70" lean-forward="false" selection-start-line="442" selection-start-column="16" selection-end-line="442" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mtfidfwe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="133" column="63" lean-forward="false" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mwtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytfidfwtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytfidfwe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="160" column="41" lean-forward="false" selection-start-line="159" selection-start-column="4" selection-end-line="160" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1341">
+          <caret line="1933" column="4" lean-forward="false" selection-start-line="1933" selection-start-column="4" selection-end-line="1933" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/people's_daily_cwe_100d">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="176">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_similarity/word_similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="432" column="41" lean-forward="false" selection-start-line="432" selection-start-column="41" selection-end-line="432" selection-end-column="41" />
+          <folding>
+            <element signature="e#248#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctfidfwe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1032">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+            <marker date="1529462623000" expanded="true" signature="14476:16665" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpywtfidfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="685" selection-end-column="0" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict/cpywtfidfe2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
